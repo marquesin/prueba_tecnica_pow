@@ -1,0 +1,57 @@
+.containerNavbar{
+    background-color: #F7F7F7;
+    padding: 2%;
+}
+.vector{
+    vertical-align: sub;
+}
+.p{
+    height: 26.546432495117188px;
+width: 22.84821319580078px;
+}
+.o{
+    height: 19.713247299194336px;
+width: 20.03369140625px;
+}
+.w{
+    height: 18.792247772216797px;
+width: 31.455791473388672px;
+
+}
+.punto{
+    height: 5.803255081176758px;
+width: 5.799064636230469px;
+}
+
+.navbarButton{
+    padding-top: 1%;
+}
+
+.nav-item a{
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+}
+.nav-item a.active{
+    border-bottom: solid 1px  #000000;
+}
+.nav-item a:hover{
+    color: #000000;
+}
+
+.buttonNavbar{
+    border: none;
+    background-color: transparent;
+    margin: 4%;
+}
+.cantidadItems{
+    margin-top: -85%;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    font-weight: 600;
+}
