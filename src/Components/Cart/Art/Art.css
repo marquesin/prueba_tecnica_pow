@@ -118,3 +118,93 @@ text-align: center;
     color: red;
     margin-left: 4%;
 }
+.talleMobil{
+    display: none;
+}
+.borrarMobi{
+    display: none;
+}
+.precioMob{
+    display: none;
+}
+@media (max-width: 1000px) and (min-width:768px) {
+    .container.art{
+        margin-top: -35% !important;
+    }
+    .colProdu div.row div.col-4 img{
+        margin-top: 5%;
+    }
+
+
+    }
+
+@media (max-width: 767px)  {
+    .art{
+        margin: 0 !important;
+        display: flex;
+    }
+    .row.listProductTitles{
+        display: none;
+ 
+     }
+     .listProduct .col-4{
+         width: 90%;
+     }
+     .art div{
+         width: 95%;
+     }
+     .talles{
+        display: none;
+    }
+     .talleMobil{
+         display: block;
+     }
+    div .cantidadesButtons{
+        width: 115px;
+        height: 46px;
+        margin-left: 50%;
+
+    }
+    .borrar{
+        display: none;
+    }
+
+    .borrarMobi{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin-left: -15%;
+        /* margin-bottom: 35%; */
+        height: 95%;
+        
+    }
+    .borrarMobi button{
+        border: none;
+        background-color: transparent;
+        margin-bottom: 35%;
+    }
+    .precio{
+    display: none;
+}
+.precioMob{
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    color: #000000;
+    margin-top: 8%;
+    text-align: center;
+}
+.precioMob span{
+    color: red;
+    margin-left: 4%;
+
+}
+.imgProduct{
+    height: 145px;
+    width: auto;
+}
+}

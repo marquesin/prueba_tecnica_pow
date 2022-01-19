@@ -7,8 +7,8 @@ import Trash from "./img/trash.svg";
 
 export default function Art() {
   // Creo los estados a utilizar
-  const [cant_art_1, setCantArt1] = useState(0);
-  const [cant_art_2, setCantArt2] = useState(0);
+  const { cant_art_1, setCantArt1 } = useContext(AppContext);
+  const { cant_art_2, setCantArt2 } = useContext(AppContext);
   const { cant_total, setCantTotal } = useContext(AppContext);
   const { precio_total, setPrecioTotal } = useContext(AppContext);
 
@@ -46,6 +46,10 @@ export default function Art() {
               <div className="descriptionItem">
                 <p className="titleProduct">Saco Cove Long</p>
                 <p className="descripProduct">Color: Rojo</p>
+                <p className="descripProduct talleMobil">44</p>
+                <p className="precioMob">
+                  <del> $9.895 </del> <span>$7.421</span>
+                </p>
               </div>
             </div>
           </div>
@@ -92,6 +96,8 @@ export default function Art() {
               <div className="descriptionItem">
                 <p className="titleProduct">Jean Hadid</p>
                 <p className="descripProduct">Color: Azul oscuro</p>
+                <p className="descripProduct talleMobil">44</p>
+                <p className="precioMob">$7.421</p>
               </div>
             </div>
           </div>
@@ -124,9 +130,17 @@ export default function Art() {
           <div className="col-1 borrar">
             <button onClick={() => setCantArt2(0)}>
               <img src={Trash} alt="" className="trash" />
-            </button>{" "}
+            </button>
           </div>
         </div>
+      </div>
+      <div className="col borrarMobi">
+        <button onClick={() => setCantArt1(0)}>
+          <img src={Trash} alt="" className="trash" />
+        </button>
+        <button onClick={() => setCantArt2(0)}>
+          <img src={Trash} alt="" className="trash" />
+        </button>
       </div>
     </div>
   );

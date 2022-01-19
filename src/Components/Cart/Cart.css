@@ -24,7 +24,7 @@
 .condicionesDeCompra h5{
     line-height:  16,41px;
     letter-spacing: 0.1px;
-    font-weight: 500;
+    font-weight: 700;
     padding-left: 0;
 }
 .condicionesDeCompra p{
@@ -105,4 +105,61 @@ li{
     border: solid 1px #000000;
     background-color: transparent;
     color:#000000 ;
+}
+.artMob{
+    display: none;
+}
+@media (max-width: 1000px) and (min-width:577px){
+    .container.cart{
+        display: flex;
+        flex-direction: column;
+    }
+.condicionesDeCompra p, .condicionesDeCompra h5{
+    font-size: 12px;
+}
+.col-2 .cantidadesButtons{
+    width: 70px;
+    height: 30px;
+}
+
+}
+@media (max-width: 767px) {
+    /* .cart div{
+        width: auto;
+        
+    } */
+    .cart h3{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .artDesk{
+        display: none;
+    }
+    .artMob{
+        display: flex;
+    }
+    .condicionesYPay{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .condicionesYPay div{
+        width: 100%;
+        margin: 0;
+    }
+    .colProdu .colPay.col-4{
+        padding: 5% 0 5% 0 !important;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .condicionesYPay .col-8 .row .col-4{
+        padding-bottom: 8%;
+    }
+    .condicionesDeCompra{
+        padding-left: 5%;
+    }
+    .colPay{
+        padding-top: 10%;
+    }
 }

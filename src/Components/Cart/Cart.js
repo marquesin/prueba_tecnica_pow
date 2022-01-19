@@ -11,7 +11,10 @@ export default function Cart() {
   return (
     <section className="container cart">
       <h3>Carrito</h3>
-      <div className="row d-flex justify-content-between">
+      <div className="artMob">
+        <Art />
+      </div>
+      <div className="row d-flex justify-content-between condicionesYPay">
         <div className="col-8 colProdu d-flex align-items-start justify-content-between">
           <div className="row d-flex align-items-center">
             <div className="col-4 d-flex align-items-center justify-content-between">
@@ -58,7 +61,9 @@ export default function Cart() {
           </div>
         </div>
       </div>
-      <Art />
+      <div className="artDesk">
+        <Art />
+      </div>
     </section>
   );
 }

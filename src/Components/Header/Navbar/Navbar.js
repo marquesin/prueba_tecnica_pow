@@ -8,6 +8,7 @@ import Punto from "./img/VectorPunto.svg";
 import Search from "./img/search.svg";
 import User from "./img/user.svg";
 import Bag from "./img/bag.svg";
+import Bars from "./img/bars.svg";
 
 export default function Navbar() {
   const { cant_total } = useContext(AppContext);
@@ -56,6 +57,26 @@ export default function Navbar() {
               <p className="cantidadItems">{cant_total}</p>
             </button>
           </div>
+        </div>
+      </div>
+      <div className="containerNavbarMob container">
+        <div className="col-3">
+          <img src={Bars} alt="" className="iconsNavbarMob" />
+          <img src={Search} alt="" className="iconsNavbarMob" />
+        </div>
+        <div className="col-4">
+          <h1>
+            <img src={P} alt="Vector P" className="vector p" />
+            <img src={O} alt="Vector O" className="vector o" />
+            <img src={W} alt="Vector W" className="vector w" />
+            <img src={Punto} alt="Vector Punto" className="vector punto" />
+          </h1>
+        </div>
+        <div className="col-2">
+          <button className="buttonNavbar">
+            <img src={Bag} alt="" />
+            <p className="cantidadItems">{cant_total}</p>
+          </button>
         </div>
       </div>
     </div>

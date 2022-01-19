@@ -1,3 +1,21 @@
+TECNOLOGÍAS
+
+Para desarrollar esta aplicación utilicé:
+
+- React Js
+- npm
+- HTML 5
+- CSS 3
+- Bootstrap
+
+DESCRIPCIÓN DE LA APLICACIÓN
+
+1. Cuenta con una versión responsive.
+2. Para el diseño intenté emular el figma provisto.
+3. La estructura de carpetas sigue un principio de jerarquía que busca optimizar la escalabilidad de la aplicación.
+
+INSTALACIÓN
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
