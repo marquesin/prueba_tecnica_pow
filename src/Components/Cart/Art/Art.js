@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Art.css";
 import Saco from "./img/image 1.png";
 import Jean from "./img/image 2.png";
 import Trash from "./img/trash.svg";
 
 export default function Art() {
+  // Creo los estados a utilizar
+  const [cant_art_1, setCantArt1] = useState(0);
+  const [cant_art_2, setCantArt2] = useState(0);
+  const [cant_total, setCantTotal] = useState(0);
+  const [precio_total, setPrecioTotal] = useState(0);
+
+  // Actualizo los totales del cart cada vez que se actualizan las cantidades de los artículos
+  useEffect(() => {
+    setCantTotal(cant_art_1 + cant_art_2);
+    setPrecioTotal(cant_art_1 * 7421 + cant_art_2 * 7421);
+  });
+
   return (
     <div className="container art">
       <div className="col-8">
@@ -43,9 +55,20 @@ export default function Art() {
           </div>
           <div className="col-2">
             <div className="d-flex cantidadesButtons">
-              <button>+</button>
-              <p className="cantidad">C</p>
-              <button>-</button>
+              {/* // Resto 1 en el artículo 1 */}
+              <button
+                onClick={() => {
+                  if (cant_art_1 > 0) {
+                    setCantArt1(cant_art_1 - 1);
+                  }
+                }}
+              >
+                -
+              </button>
+              <p className="cantidad">{cant_art_1}</p>
+
+              {/* // Sumo 1 en el artículo 1 */}
+              <button onClick={() => setCantArt1(cant_art_1 + 1)}>+</button>
             </div>
           </div>
           <div className="col-3">
@@ -78,9 +101,20 @@ export default function Art() {
           </div>
           <div className="col-2">
             <div className="d-flex cantidadesButtons">
-              <button>+</button>
-              <p className="cantidad">C</p>
-              <button>-</button>
+              {/* // Resto 1 en el artículo 2 */}
+              <button
+                onClick={() => {
+                  if (cant_art_2 > 0) {
+                    setCantArt2(cant_art_2 - 1);
+                  }
+                }}
+              >
+                -
+              </button>
+              <p className="cantidad">{cant_art_2}</p>
+
+              {/* // Sumo 1 en el artículo 1 */}
+              <button onClick={() => setCantArt2(cant_art_2 + 1)}>+</button>
             </div>
           </div>
           <div className="col-3">
