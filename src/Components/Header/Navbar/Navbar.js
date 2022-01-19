@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../../Context/AppContext";
 import "./Navbar.css";
 import P from "./img/VectorP.svg";
 import O from "./img/VectorO.svg";
@@ -9,6 +10,8 @@ import User from "./img/user.svg";
 import Bag from "./img/bag.svg";
 
 export default function Navbar() {
+  const { cant_total } = useContext(AppContext);
+
   return (
     <div>
       <div className="row justify-content-center containerNavbar">
@@ -50,7 +53,7 @@ export default function Navbar() {
             </button>
             <button className="buttonNavbar">
               <img src={Bag} alt="" />
-              <p className="cantidadItems">2</p>
+              <p className="cantidadItems">{cant_total}</p>
             </button>
           </div>
         </div>

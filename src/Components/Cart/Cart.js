@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../Context/AppContext";
 import "./Cart.css";
 import Cube from "./img/cube.svg";
 import Exchange from "./img/exchange.svg";
 import Card from "./img/credit-card.svg";
 import Art from "./Art/Art";
 export default function Cart() {
+  const { precio_total } = useContext(AppContext);
+
   return (
     <section className="container cart">
       <h3>Carrito</h3>
@@ -43,9 +46,9 @@ export default function Cart() {
               <p>Total</p>
             </li>
             <li className="col desgloseResumen">
-              <p>$8514</p>
+              <p>$ {precio_total}</p>
               <p>Gratis</p>
-              <p>$8514</p>
+              <p>$ {precio_total}</p>
             </li>
           </ul>
           <div className="row d-flex justify-content-center align-items-center finalizarCompra">

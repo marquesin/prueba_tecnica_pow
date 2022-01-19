@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { AppContext } from "../../../Context/AppContext";
 import "./Art.css";
 import Saco from "./img/image 1.png";
 import Jean from "./img/image 2.png";
@@ -8,8 +9,8 @@ export default function Art() {
   // Creo los estados a utilizar
   const [cant_art_1, setCantArt1] = useState(0);
   const [cant_art_2, setCantArt2] = useState(0);
-  const [cant_total, setCantTotal] = useState(0);
-  const [precio_total, setPrecioTotal] = useState(0);
+  const { cant_total, setCantTotal } = useContext(AppContext);
+  const { precio_total, setPrecioTotal } = useContext(AppContext);
 
   // Actualizo los totales del cart cada vez que se actualizan las cantidades de los artículos
   useEffect(() => {
@@ -78,7 +79,9 @@ export default function Art() {
           </div>
           <div className="col-1">
             <p>
-              <img src={Trash} alt="" className="trash" />
+              <button onClick={() => setCantArt1(0)}>
+                <img src={Trash} alt="" className="trash" />
+              </button>
             </p>
           </div>
         </div>
@@ -122,7 +125,9 @@ export default function Art() {
           </div>
           <div className="col-1">
             <p>
-              <img src={Trash} alt="" className="trash" />
+              <button onClick={() => setCantArt2(0)}>
+                <img src={Trash} alt="" className="trash" />
+              </button>{" "}
             </p>
           </div>
         </div>
