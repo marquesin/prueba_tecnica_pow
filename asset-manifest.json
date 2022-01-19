@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/prueba_tecnica_pow/static/css/main.069a60c6.css",
+    "main.js": "/prueba_tecnica_pow/static/js/main.4562c252.js",
+    "static/media/image 2.png": "/prueba_tecnica_pow/static/media/image 2.4bfaac87c298a1043495.png",
+    "static/media/image 1.png": "/prueba_tecnica_pow/static/media/image 1.63488882ce5c9c55faa2.png",
+    "static/media/user.svg": "/prueba_tecnica_pow/static/media/user.ac6884f3f1e224d618de45e559f20879.svg",
+    "static/media/insta.svg": "/prueba_tecnica_pow/static/media/insta.90a80cd5b9a105845e0d07f0cdaf509b.svg",
+    "static/media/VectorP.svg": "/prueba_tecnica_pow/static/media/VectorP.d73f9745887fa145190baa04dbbd467c.svg",
+    "index.html": "/prueba_tecnica_pow/index.html",
+    "static/media/VectorPs.svg": "/prueba_tecnica_pow/static/media/VectorPs.024b49874915b990ffb45e3f28b47c8d.svg",
+    "static/media/VectorW.svg": "/prueba_tecnica_pow/static/media/VectorW.1922af5ebf1721ad73e464c53a189524.svg",
+    "static/media/credit-card.svg": "/prueba_tecnica_pow/static/media/credit-card.85fe052e03f3690ce8d90d26d38cccd8.svg",
+    "static/media/VectorWs.svg": "/prueba_tecnica_pow/static/media/VectorWs.b40abb66ddbec17ff4d36bd3f2451816.svg",
+    "static/media/search.svg": "/prueba_tecnica_pow/static/media/search.3e8530290ed6bf930760440157fbd572.svg",
+    "static/media/exchange.svg": "/prueba_tecnica_pow/static/media/exchange.43c92c7f2cee3ca4a775d73802fc72a9.svg",
+    "static/media/bars.svg": "/prueba_tecnica_pow/static/media/bars.e8db7520285d01597a75c139d54e29ce.svg",
+    "static/media/VectorO.svg": "/prueba_tecnica_pow/static/media/VectorO.f9e46666e8a1989821daa473bb7e84c6.svg",
+    "static/media/cube.svg": "/prueba_tecnica_pow/static/media/cube.45923357126dc435f33c4c2b3428fb55.svg",
+    "static/media/face.svg": "/prueba_tecnica_pow/static/media/face.4572f3143062ec3dfd7aea11e6bcf578.svg",
+    "static/media/VectorOs.svg": "/prueba_tecnica_pow/static/media/VectorOs.f54087475c7dbb71bbcc94d9aaca8b4e.svg",
+    "static/media/trash.svg": "/prueba_tecnica_pow/static/media/trash.8b6b72844fd26d9c9e5ef9e130cd411e.svg",
+    "static/media/bag.svg": "/prueba_tecnica_pow/static/media/bag.a58d954da3f02b5bfd1dd26ddeede686.svg",
+    "static/media/VectorPunto.svg": "/prueba_tecnica_pow/static/media/VectorPunto.bc574f91948f4315607a901d75dfa0e9.svg",
+    "main.069a60c6.css.map": "/prueba_tecnica_pow/static/css/main.069a60c6.css.map",
+    "main.4562c252.js.map": "/prueba_tecnica_pow/static/js/main.4562c252.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.069a60c6.css",
+    "static/js/main.4562c252.js"
+  ]
+}
