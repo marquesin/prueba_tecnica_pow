@@ -49,7 +49,7 @@ export default function Art() {
               </div>
             </div>
           </div>
-          <div className="col-1">
+          <div className="col-1 talles">
             <div className="d-flex">
               <p className="talle">44</p>
             </div>
@@ -77,12 +77,10 @@ export default function Art() {
               <del> $9.895 </del> <span>$7.421</span>
             </p>
           </div>
-          <div className="col-1">
-            <p>
-              <button onClick={() => setCantArt1(0)}>
-                <img src={Trash} alt="" className="trash" />
-              </button>
-            </p>
+          <div className="col-1 borrar">
+            <button onClick={() => setCantArt1(0)}>
+              <img src={Trash} alt="" className="trash" />
+            </button>
           </div>
         </div>
         <hr className="hrListP" />
@@ -97,7 +95,7 @@ export default function Art() {
               </div>
             </div>
           </div>
-          <div className="col-1">
+          <div className="col-1 talles">
             <div className="d-flex">
               <p className="talle">44</p>
             </div>
@@ -123,12 +121,10 @@ export default function Art() {
           <div className="col-3">
             <p className="precio">$7.421</p>
           </div>
-          <div className="col-1">
-            <p>
-              <button onClick={() => setCantArt2(0)}>
-                <img src={Trash} alt="" className="trash" />
-              </button>{" "}
-            </p>
+          <div className="col-1 borrar">
+            <button onClick={() => setCantArt2(0)}>
+              <img src={Trash} alt="" className="trash" />
+            </button>{" "}
           </div>
         </div>
       </div>

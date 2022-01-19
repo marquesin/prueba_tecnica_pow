@@ -45,7 +45,7 @@ export default function Cart() {
               <p>Envío</p>
               <p>Total</p>
             </li>
-            <li className="col desgloseResumen">
+            <li className="col desgloseValores">
               <p>$ {precio_total}</p>
               <p>Gratis</p>
               <p>$ {precio_total}</p>

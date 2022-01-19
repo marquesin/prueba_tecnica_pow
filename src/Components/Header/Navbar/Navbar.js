@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <div>
       <div className="row justify-content-center containerNavbar">
-        <div className="col-1 align-content-end">
+        <div className="col-auto align-content-end">
           <h1>
             <img src={P} alt="Vector P" className="vector p" />
             <img src={O} alt="Vector O" className="vector o" />

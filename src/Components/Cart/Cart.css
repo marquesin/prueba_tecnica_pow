@@ -2,6 +2,9 @@
     margin-top: 2%;
     
 }
+.cart h3{
+    margin-left: 1%;
+}
 .colProdu{
     padding-top: 2%;
 }
@@ -9,7 +12,6 @@
 .colProdu :first-child{
     background-color: #F7F7F7;
     padding: 2%;
-
 }
 
 .condicionesDeCompra h5, .condicionesDeCompra p{
@@ -21,12 +23,13 @@
 }
 .condicionesDeCompra h5{
     line-height:  16,41px;
-   letter-spacing: 0.1px;
-   font-weight: 500;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    padding-left: 0;
 }
 .condicionesDeCompra p{
    font-weight: 400;
-
+   padding-left: 2%;
 }
 .resumen{
     font-family: 'Roboto', sans-serif;
@@ -39,7 +42,7 @@ align-items: center;
 letter-spacing: 0.15px;
 color: #000000;
 }
-.desgloseResumen{
+.desgloseResumen,.desgloseValores{
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -51,9 +54,15 @@ display: flex;
 flex-direction: column;
 justify-content: start;
 }
-.desgloseResumen :last-child{
+.desgloseResumen :last-child, .desgloseValores :last-child{
     font-weight: bold;
 }
+
+.desgloseValores{
+    text-align: right;
+    margin-right: 4%;
+    }
+
 .colPay{
     
     padding-top: 2%;
